@@ -543,10 +543,6 @@ select {
 	background: #D3D9D9;
 }
 
-/* select { padding: 0;
-   width: 220px;
-   } */
-
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,

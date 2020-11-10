@@ -124,7 +124,7 @@ class Contact extends Component {
 
                <div className="widget widget_tweets">
                   <h4 className="widget-title">Latest Work</h4>
-                  <ul id="twitter">
+                  <ul id="gitfeed">
                      <li>
                         <span>
                         Render latest commits here
