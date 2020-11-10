@@ -105,7 +105,7 @@ class Contact extends Component {
 					</fieldset>
                </form>
 
-                <div id="message-warning"> Error boy</div>
+                <div id="message-warning">An error has occurred sending the email. Please open an issue on <a href="http://github.com/trdillon/portfolio">GitHub</a> to report this.</div>
                 <div id="message-success">
                     <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                 </div>
