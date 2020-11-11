@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
+$(function() {
+    $.getJSON('https://api.github.com/users/trdillon/events?callback=?', function(data) {
+        var list = $('#push-events');
+
+        $.each(data.data, function(key, val) {
+            if (val.type === "PushEvent") {
+                $.each(val.payload.commits, function(key2, val2) {
+                    list.append('<li id="' + val2.sha + '"><a href="' + val2.url + '">'
+                        + val2.message + '</a><br/>[' + val.repo.name + ']</li>');
+                });
+            }
+        });
+    });
+});
+
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -124,13 +139,7 @@ class Contact extends Component {
 
                <div className="widget widget_tweets">
                   <h4 className="widget-title">Latest Work</h4>
-                  <ul id="gitfeed">
-                     <li>
-                        <span>
-                        Render latest commits here
-                        </span>
-                     </li>
-                  </ul>
+                  <ul id="push-events"></ul>
 		         </div>
             </aside>
          </div>
