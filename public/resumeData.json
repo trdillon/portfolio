@@ -2,9 +2,9 @@
   "main": {
     "name":"Tim Dillon",
     "occupation":"Junior Software Developer",
-    "description":"I recently graduated from Western Governors University in the US with a Bachelors of Science in Software Development. I have experience with Java making desktop apps using JavaFX as well as using Spring Boot for web apps",
+    "description":"I recently graduated from Western Governors University in the US with a Bachelors of Science in Software Development.",
     "image":"profilepic.jpg",
-    "bio":"The majority of my experience so far has been with Java. I am most interested in growing as a backend developer, creating web apps and microservices, but I'm always open to new adventures. When I'm not coding I play soccer, go mountain climbing, or play with my 2 dogs.",
+    "bio":"The majority of my experience so far has been with Java, making Java desktop apps with JavaFX. I also have some experience using Spring Boot for Java web apps. I am most interested in growing as a backend developer, creating web apps and microservices, but I'm always open to new adventures. When I'm not coding I play soccer, go mountain climbing, or play with my 2 dogs.",
     "contactmessage":"Feel free to reach out to me and connect",
     "email": "tim@itsdits.com",
     "phone": "+81 090 3919 1889",
