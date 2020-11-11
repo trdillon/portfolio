@@ -8,7 +8,7 @@ $(function() {
         $.each(data.data, function(key, val) {
             if (val.type === "PushEvent") {
                 $.each(val.payload.commits, function(key2, val2) {
-                    list.append('<li id="' + val2.sha + '"><a href="' + val2.url + '">'
+                    list.append('<li id="' + val2.sha + '"><a href="https://github.com/' + val.repo.name + '/commit/' + val2.sha + '">'
                         + val2.message + '</a><br/>[' + val.repo.name + ']</li>');
                 });
             }
