@@ -694,23 +694,24 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* Git Feed */
-#gitfeed {
+/*
+#push-events {
    margin-top: 12px;
    padding: 0;
 }
-#gitfeed li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
+#push-events li {
+   margin: 0px 0px 0px 0;
+   line-height: 20px;
 }
-#gitfeed li span {
+#push-events li span {
    display: block;
 }
-#gitfeed li b a {
+#push-events li b a {
    font: 13px/36px 'opensans-regular', Sans-serif;
    color: #474747 !important;
    border: none;
 }
-
+*/
 /* ------------------------------------------------------------------ */
 /* i. Footer
 /* ------------------------------------------------------------------ */
