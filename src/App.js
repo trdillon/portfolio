@@ -44,6 +44,9 @@ class App extends Component {
   }
 
   render() {
+    window.dataLayer.push({
+      event: 'pageview'
+    });
     return (
       <div className="App">
         <Header data={this.state.resumeData.main}/>
