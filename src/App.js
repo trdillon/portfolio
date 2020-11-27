@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module'
 import $ from 'jquery';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -17,9 +17,11 @@ class App extends Component {
       resumeData: {}
     };
 
-    ReactGA.initialize('UA-172416552-2');
-    ReactGA.pageview(window.location.pathname);
+    const tagManagerArgs = {
+      gtmId: 'GTM-000000'
+    }
 
+    TagManager.initialize(tagManagerArgs)
   }
 
   getResumeData(){
