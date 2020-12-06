@@ -403,7 +403,7 @@ ul#nav li.current a { color: #F06000; }
    vertical-align: bottom;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
-.portfolio-item .portfolio-item-meta h5 {
+.portfolio-item .portfolio-item-meta h4 {
    font: 14px/21px 'opensans-bold', sans-serif;
    color: #fff;
 }
