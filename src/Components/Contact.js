@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 $(function() {
-    $.getJSON('https://api.github.com/users/trdillon/events?callback=?', function(data) {
+    $.getJSON('https://api.github.com/users/trdillon/events?per_page=3&callback=?', function(data) {
         var list = $('#push-events');
 
         $.each(data.data, function(key, val) {
