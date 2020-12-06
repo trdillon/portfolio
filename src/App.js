@@ -13,12 +13,11 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      foo: 'bar',
       resumeData: {}
     };
 
     const tagManagerArgs = {
-      gtmId: 'GTM-000000'
+      gtmId: 'GTM-PDGQF24'
     }
 
     TagManager.initialize(tagManagerArgs)
