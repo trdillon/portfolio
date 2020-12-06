@@ -109,7 +109,7 @@ class Contact extends Component {
                         </div>
                         <div>
                             <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.contactMessage} onChange={this.handleChange}></textarea>
+                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" value={this.state.contactMessage} onChange={this.handleChange}/>
                         </div>
                         <div>
                             <button type="submit" className="submit">Submit</button>
@@ -122,7 +122,7 @@ class Contact extends Component {
 
                 <div id="message-warning">An error has occurred sending the email. Please open an issue on <a href="http://github.com/trdillon/portfolio">GitHub</a> to report this.</div>
                 <div id="message-success">
-                    <i className="fa fa-check"></i>Your message was sent, thank you!<br />
+                    <i className="fa fa-check"/>Your message was sent, thank you!<br />
                 </div>
            </div>
 
@@ -139,7 +139,7 @@ class Contact extends Component {
 
                <div className="widget widget_tweets">
                   <h4 className="widget-title">Latest Work</h4>
-                  <ul id="push-events"></ul>
+                  <ul id="push-events"/>
 		         </div>
             </aside>
          </div>
