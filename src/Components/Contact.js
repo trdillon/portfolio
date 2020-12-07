@@ -8,7 +8,8 @@ $(function() {
         $.each(data.data, function(key, val) {
             if (val.type === "PushEvent") {
                 $.each(val.payload.commits, function(key2, val2) {
-                    list.append('<li id="' + val2.sha + '"><a href="https://github.com/' + val.repo.name + '/commit/' + val2.sha + '">'
+                    list.append('<li id="' + val2.sha + '"><a href="https://github.com/'
+                        + val.repo.name + '/commit/' + val2.sha + '">'
                         + val2.message + '</a><br/>[' + val.repo.name + ']</li>');
                 });
             }
@@ -114,13 +115,14 @@ class Contact extends Component {
                         <div>
                             <button type="submit" className="submit">Submit</button>
                             <span id="image-loader">
-                            <img alt="" src="images/loader.gif" />
+                            <img alt="loading" src="images/loader.gif" height="48px" width="48px" />
                             </span>
                         </div>
 					</fieldset>
                </form>
 
-                <div id="message-warning">An error has occurred sending the email. Please open an issue on <a href="http://github.com/trdillon/portfolio">GitHub</a> to report this.</div>
+                <div id="message-warning">An error has occurred sending the email. Please open an issue on
+                    <a href="http://github.com/trdillon/portfolio">GitHub</a> to report this.</div>
                 <div id="message-success">
                     <i className="fa fa-check"/>Your message was sent, thank you!<br />
                 </div>
